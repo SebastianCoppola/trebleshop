@@ -70,7 +70,11 @@ Ambas páginas incluyen también `<meta name="keywords">`, `<meta name="robots" 
 - `lang="es"` en `<html>`
 
 
-# Herramientas utilizadas
+# Verificar SEO con Google Lighthouse (DevTools):
 
-- **Google Lighthouse** (DevTools): Performance, Accessibility, SEO
-- **WAVE** (WebAIM): accesibilidad
+- Informe MOBILE: doc/seo-desktop.pdf
+- Informe DESKTOP: doc/seo-mobile.pdf
+
+Entre las cosas que quedan por mejorar, sobre todo con el rendimiento mobile, puedo ver: 
+- Peso de las imágenes. 
+- La carga de GoogleFonts bloquea el texto hasta que se completa. 

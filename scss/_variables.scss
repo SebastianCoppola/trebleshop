@@ -1,0 +1,59 @@
+// ============================================================
+// Overrides de variables Bootstrap 5
+// ============================================================
+
+// Tipografía
+$font-family-base:      'Inter', system-ui, -apple-system, sans-serif;
+$headings-font-family:  'Oswald', sans-serif;
+$headings-font-weight:  700;
+$font-size-base:        1rem;
+$line-height-base:      1.6;
+
+// Paleta principal
+$primary:   #FFC107;
+$secondary: #6c757d;
+$success:   #28a745;
+$danger:    #dc3545;
+$dark:      #111111;
+$light:     #f8f9fa;
+
+// Body
+$body-bg:    #000000;
+$body-color: #ffffff;
+
+// Links
+$link-color:       $primary;
+$link-hover-color: #e6ac00;
+
+// Superficies
+$surface-0: #0d0d0d;
+$surface-1: #1a1a1a;
+$surface-2: #1e1e1e;
+
+// Bordes
+$border-color:       #2a2a2a;
+$border-radius:      0.4rem;
+$border-radius-lg:   0.6rem;
+$border-radius-pill: 50rem;
+
+// Navbar
+$navbar-padding-y:                 0.75rem;
+$navbar-dark-color:                rgba(255, 255, 255, 0.8);
+$navbar-dark-hover-color:          $primary;
+$navbar-dark-active-color:         $primary;
+$navbar-dark-brand-color:          $primary;
+$navbar-dark-brand-hover-color:    $primary;
+$navbar-dark-toggler-border-color: rgba(255, 255, 255, 0.2);
+
+// Botones
+$btn-border-radius: 0.4rem;
+$btn-padding-x:     1.5rem;
+$btn-padding-y:     0.6rem;
+$btn-font-weight:   600;
+$btn-font-size:     0.9rem;
+
+// Modal
+$modal-content-bg:            #111111;
+$modal-content-border-color:  #222222;
+$modal-header-border-color:   #222222;
+$modal-content-border-radius: 0.75rem;

@@ -1,0 +1,17 @@
+// ============================================================
+// Entry point SCSS
+//
+// Orden obligatorio para personalizar Bootstrap con Sass:
+//  1. Overrides de variables
+//  2. Bootstrap completo (usa nuestras variables)
+//  3. Estilos propios adicionales
+// ============================================================
+
+// 1. Variable overrides
+@import "variables";
+
+// 2. Bootstrap source
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// 3. Custom component styles
+@import "custom";

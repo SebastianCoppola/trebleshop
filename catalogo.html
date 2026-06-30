@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- SEO -->
+        <title>Catálogo de Guitarras</title>
+        <meta name="description" content="Explorá nuestro catálogo completo de guitarras eléctricas. Stratocaster, Telecaster, Les Paul, SG, amplificadores y accesorios. Fender, Gibson, Epiphone y más.">
+        <meta name="keywords" content="catálogo guitarras, Stratocaster precio, Telecaster comprar, Les Paul Argentina, SG Gibson, amplificadores guitarra, TrebleShop">
+        <meta name="author" content="Sebastián Coppola">
+        <meta name="robots" content="index, follow">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="Catálogo — TrebleShop">
+        <meta property="og:description" content="Más de 50 guitarras eléctricas de las mejores marcas del mundo.">
+        <meta property="og:type" content="website">
+
+        <!-- Favicon -->
+        <link rel="icon" href="./img/favicon.ico" type="image/svg+xml">
+
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+        <!-- CSS compilado -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navegación principal">
+                <div class="container">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html" aria-label="TrebleShop — Inicio">
+                        TREBLE<span>SHOP</span>
+                    </a>
+                    <!-- Hamburger mobile -->
+                    <button 
+                        class="navbar-toggler border-0" 
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNav"
+                        aria-controls="mainNav"
+                        aria-expanded="false"
+                        aria-label="Abrir menú de navegación"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Nav links -->
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html" aria-current="page">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="catalogo.html">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+                            </li>
+                            <li class="nav-item ms-lg-2">
+                                <a class="nav-link disabled" href="#" aria-label="Ver carrito">
+                                    <span class="cart-icon-wrapper">
+                                        <i class="bi bi-bag fs-5" aria-hidden="true"></i>
+                                        <span class="cart-count" aria-live="polite" style="display:none">0</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container py-4 catalogo-section">
+                <div class="row g-4">
+                    <!-- Filtros (desktop - tablet) -->
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <aside class="sidebar-categorias" aria-label="Filtros por categoría">
+                            <p class="sidebar-title">Categorías</p>
+                            <ul class="cat-list" role="list">
+                                <li class="cat-item active" data-category="todos" role="listitem" aria-selected="true">
+                                    Todos
+                                </li>
+                                <li class="cat-item" data-category="stratocaster" role="listitem" aria-selected="false">
+                                    Stratocaster
+                                </li>
+                                <li class="cat-item" data-category="telecaster" role="listitem"  aria-selected="false">
+                                    Telecaster
+                                </li>
+                                <li class="cat-item" data-category="les-paul" role="listitem" aria-selected="false">
+                                    Les Paul
+                                </li>
+                                <li class="cat-item" data-category="sg" role="listitem" aria-selected="false">
+                                    SG
+                                </li>
+                                <li class="cat-item" data-category="amplificadores" role="listitem" aria-selected="false">
+                                    Amplificadores
+                                </li>
+                                <li class="cat-item" data-category="accesorios" role="listitem" aria-selected="false">
+                                    Accesorios
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <!--  Productos -->
+                    <div class="col-lg-9">
+                        <!-- Filtros (mobile) -->
+                        <div class="d-lg-none mb-3">
+                            <button
+                                class="btn btn-outline-secondary w-100 d-flex justify-content-between align-items-center"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#mobileFilters"
+                                aria-expanded="false"
+                                aria-controls="mobileFilters"
+                            >
+                                <span><i class="bi bi-funnel me-2" aria-hidden="true"></i>Filtrar por categoría</span>
+                                <i class="bi bi-chevron-down mobile-filter-chevron" aria-hidden="true"></i>
+                            </button>
+                            <div class="collapse" id="mobileFilters">
+                                <ul class="cat-list mt-2" role="list" aria-label="Categorías de productos">
+                                    <li class="cat-item active" data-category="todos" role="listitem" aria-selected="true">
+                                        Todos los productos
+                                    </li>
+                                    <li class="cat-item" data-category="stratocaster" role="listitem" aria-selected="false">
+                                        Stratocaster
+                                    </li>
+                                    <li class="cat-item" data-category="telecaster" role="listitem" aria-selected="false">
+                                        Telecaster
+                                    </li>
+                                    <li class="cat-item" data-category="les-paul" role="listitem" aria-selected="false">
+                                        Les Paul
+                                    </li>
+                                    <li class="cat-item" data-category="sg" role="listitem" aria-selected="false">
+                                        SG
+                                    </li>
+                                    <li class="cat-item" data-category="amplificadores" role="listitem" aria-selected="false">
+                                        Amplificadores
+                                    </li>
+                                    <li class="cat-item" data-category="accesorios" role="listitem" aria-selected="false">
+                                        Accesorios
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Productos -->
+                        <div class="row g-4" id="productGrid" aria-label="Listado de productos">
+                            <!-- JS renderiza las cards aquí -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer" aria-label="Pie de página">
+            <div class="container">
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
+                    <p class="footer-copy mb-0">&copy; 2026 TrebleShop. Todos los derechos reservados.</p>
+                    <p class="footer-copy mb-0">Desarrollado por Sebastián Coppola — DSW UTN FRSF</p>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Modal — detalle de producto -->
+        <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-dark text-white border border-secondary">
+                    <div class="modal-header border-0 pb-0">
+                        <h2 class="modal-title fs-5" id="productModalLabel">
+                            <span class="modal-product-cat text-warning me-2" style="font-size:0.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600"></span>
+                            <span class="modal-product-name"></span>
+                        </h2>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body pt-3">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-md-5 text-center">
+                                <img class="modal-img rounded" src="" alt=""
+                                    style="width:100%;max-height:340px;object-fit:contain;background:#0a0a0a;border-radius:.5rem">
+                            </div>
+                            <div class="col-md-7">
+                                <p class="modal-product-brand text-secondary small mb-2"></p>
+                                <p class="modal-product-desc text-secondary mb-4" style="font-size:.9rem;line-height:1.6"></p>
+                                <p class="modal-product-price text-warning fw-bold mb-3" style="font-size:1.5rem"></p>
+                                <button type="button" class="btn btn-primary modal-add-to-cart">
+                                    <i class="bi bi-cart-plus me-1" aria-hidden="true"></i>Agregar al carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap 5 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+        <!-- JS -->
+        <script src="db/db.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

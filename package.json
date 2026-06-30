@@ -1,0 +1,13 @@
+{
+  "name": "trebleshop",
+  "version": "1.0.0",
+  "description": "TrebleShop - E-commerce de guitarras eléctricas - DSW TP2",
+  "scripts": {
+    "sass:build": "sass scss/main.scss css/main.css --style compressed --no-source-map",
+    "sass:watch": "sass scss/main.scss css/main.css --style compressed --no-source-map --watch"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.77.0"
+  }
+}
